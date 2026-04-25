@@ -1,0 +1,35 @@
+/***************************************
+========================================
+
+	Author Name   : Masuk Mia
+	This is vue js 3  template
+	Template Name : Maxpro - vuej 3 Creative Personal Resume/portfolio Template
+	Version: 1.0
+	
+****************************************
+=======================================/
+
+
+
+/* ----------------------------------------------------------------
+			[ All Css Plugins File ]
+-----------------------------------------------------------------*/
+
+/* == Bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == Owl-carousel == */
+@import url("plugins/owl.carousel.min.css");
+@import url("plugins/owl.theme.default.min.css");
+
+/* == Animated-headline == */
+@import url("plugins/animated-headline.css");
+
+/* == Slicknav js == */
+@import url("plugins/slicknav.min.css");
+
+/* == Normalize == */
+@import url("plugins/normalize.css");
+
+/* == Animate == */
+@import url("plugins/animate.css");
