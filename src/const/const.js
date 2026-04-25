@@ -1,3 +1,3 @@
 const API_URL = "https://portfolio-bakcend.herokuapp.com/api/v1/";
-
-export default API_URL;
+const user = JSON.parse(localStorage.getItem("user"))
+export default {API_URL, user};

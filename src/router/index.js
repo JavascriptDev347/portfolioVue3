@@ -1,4 +1,5 @@
-import PortfolioPageVue from "@/views/portfolios/PortfolioPage.vue";
+// import PortfolioPageVue from "@/views/portfolios/PortfolioPage.vue";
+import MasterPageVue from "@/views/MasterPage.vue";
 import {createRouter, createWebHistory} from "vue-router";
 
 const routes = [
@@ -23,19 +24,20 @@ const routes = [
             {
                 path: "/portfolio",
                 name: "portfolio",
-                component: PortfolioPageVue,
+                component: MasterPageVue,
                 meta: {requiresAuth: true}
             },
-            {
-                path: "/skills",
-                name: "skills",
-                component: () => import("@/views/Skills/MySkills"),
-                meta: {requiresAuth: true}
-            }
+           
+
+            
         ]
+    },
+    {
+        path: "/:pathMatch()",
+        name: "NotFound",
+        component: () => import("@/views/NotFound/NotFound")
+
     }
-
-
 ];
 
 const router = createRouter({

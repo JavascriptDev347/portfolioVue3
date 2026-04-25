@@ -1,21 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong
-        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
-        properly without JavaScript enabled. Please enable it to
-        continue.</strong
-      >
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Rustambek Portfolio</title>
+    <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,600,600i,700,800"
+            rel="stylesheet"
+    />
+    <link href="./frontend/fonts/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./frontend/fonts/etline.css" rel="stylesheet"/>
+    <link href="./frontend/css/plugins.css" rel="stylesheet"/>
+    <link href="./frontend/css/lightbox.min.css" rel="stylesheet"/>
+    <link href="./frontend/css/responsive.css" rel="stylesheet"/>
+    <link href="./frontend/css/style.css" rel="stylesheet"/>
+    <link href="/js/about.94e20234.js" rel="prefetch"/>
+    <link href="/js/app.53864d20.js" rel="preload" as="script"/>
+    <link href="/js/chunk-vendors.1f0a88d7.js" rel="preload" as="script"/>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <link rel="manifest" href="/manifest.json"/>
+    <meta name="theme-color" content="#4DBA87"/>
+    <meta name="apple-mobile-web-app-capable" content="no"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <meta name="apple-mobile-web-app-title" content="Rustambek Portfolio"/>
+    
+    <link
+            rel="mask-icon"
+            href="/img/icons/safari-pinned-tab.svg"
+            color="#4DBA87"
+    />
+    <meta
+            name="msapplication-TileImage"
+            content="/img/icons/msapplication-icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#000000"/>
+
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-offset="80">
+<div id="app"></div>
+<script src="./frontend/js/jquery.min.js"></script>
+<script src="./frontend/js/bootstrap.min.js"></script>
+<script src="./frontend/js/owl.carousel.min.js"></script>
+<script src="./frontend/js/modernizr-2.8.3.min.js"></script>
+<script src="./frontend/js/jquery.nav.js"></script>
+<script src="./frontend/js/jquery.inview.min.js"></script>
+<script src="./frontend/js/isotope.pkgd.min.js"></script>
+<script src="./frontend/js/animated-headline.js"></script>
+<script src="./frontend/js/jquery.ripples-min.js"></script>
+<script src="./frontend/js/lightbox.min.js"></script>
+<script src="./frontend/js/slick-nav.js"></script>
+<script src="./frontend/js/form-contact.js"></script>
+<script src="./frontend/js/scrolltopcontrol.js"></script>
+<script src="./frontend/js/wow.min.js"></script>
+<script>
+    jQuery(document).ready(function () {
+        var $home = $("#home");
+        $home.ripples({
+            resolution: 512,
+            dropRadius: 20,
+            perturbance: 0.04,
+        });
+    });
+</script>
+<script src="./frontend/js/main.js"></script>
+<script src="./js/chunk-vendors.1f0a88d7.js"></script>
+<script src="./js/app.53864d20.js"></script>
+</body>
 </html>
+
+
+
