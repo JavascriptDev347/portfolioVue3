@@ -1,0 +1,21 @@
+name: Deploy Portfolio
+on:
+  push:
+    branches: [ main ] # Agar branchniz nomi master bo'lsa, master deb yozing
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install and Build
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: dist # Vue 3 build qilganda dist papkasini yaratadi
+          branch: gh-pages # Tayyor sayt shu branchga yuklanadi
